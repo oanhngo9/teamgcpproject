@@ -7,7 +7,7 @@ variable "vpc_name" {
 variable "project_name" {
   description = "The name of the project"
   type        = string
-  default     = "puofwswvtu"  # replace with your project name
+  default     = "team-gcp-project"  # replace with your project name
 }
 
 variable "region" {
@@ -54,13 +54,13 @@ variable "machine_type" {
 
 variable "targetpool_name" {
   type        = string
-  default     = "project"
+  default     = "team-gcp-project"
   description = "description"
 }
 
 variable "igm_name" {
   type        = string
-  default     = "project"
+  default     = "team-gcp-project"
   description = "description"
 }
 
