@@ -1,7 +1,7 @@
 variable "vpc_name" {
   description = "The name of the VPC network"
   type        = string
-  default     = "dec_team_vpc"  # replace with your VPC name
+  default     = "dec-team-vpc"  # replace with your VPC name
 }
 
 variable "project_name" {
