@@ -5,13 +5,11 @@ variable "dec_vpc_name" {
 }
 
 variable "project_name" {
+  description = "The name of the project"
   type        = string
-  default     = "YourProjectID" 
-  description = "enter your project name"
 }
 
 variable "region" {
-  description = "provide a region"
+  description = "The region of the project"
   type        = string
-  default     = ""
 }
