@@ -39,3 +39,33 @@ variable "maximum_instances" {
   default     = "5"
   description = "maximum desired instances"
 }
+
+variable "template_name" {
+  type        = string
+  default     = "sasha-template"
+  description = "desired name for the compute instance template"
+}
+
+variable "machine_type" {
+  type        = string
+  default     = "e2-small"
+  description = "add your machine type"
+}
+
+variable "targetpool_name" {
+  type        = string
+  default     = "project"
+  description = "description"
+}
+
+variable "igm_name" {
+  type        = string
+  default     = "project"
+  description = "description"
+}
+
+variable "data_base_version" {
+  type        = string
+  default     = "MYSQL_5_7" #MYSQL_5_6, MYSQL_5_7, MYSQL_8_0, POSTGRES_9_6,POSTGRES_10, POSTGRES_11, POSTGRES_12, POSTGRES_13, SQLSERVER_2017_STANDARD, SQLSERVER_2017_ENTERPRISE, SQLSERVER_2017_EXPRESS, SQLSERVER_2017_WEB
+  description = "specifies the database version"
+}
