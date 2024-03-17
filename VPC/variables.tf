@@ -1,8 +1,3 @@
-provider "google" {
-  project = var.project_name
-  region  = var.region
-}
-
 variable "vpc_name" {
   description = "The name of the VPC network"
   type        = string
