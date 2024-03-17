@@ -15,3 +15,27 @@ variable "region" {
   type        = string
   default     = "us-central1"  # replace with your region
 }
+
+variable "ASG_name" {
+  type        = string
+  default     = "dec_asg"
+  description = "desired name for the autoscaling"
+}
+
+variable "zone" {
+  type        = string
+  default     = "us-central1-a"
+  description = "zone where to deploy resource"
+}
+
+variable "minimum_instances" {
+  type        = number
+  default     = "1"
+  description = "minimum desired instances running"
+}
+
+variable "maximum_instances" {
+  type        = number
+  default     = "5"
+  description = "maximum desired instances"
+}
