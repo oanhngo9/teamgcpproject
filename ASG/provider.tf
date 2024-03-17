@@ -1,4 +1,5 @@
-provider "google" {
-  project = var.project_name
-  region  = var.region
+provider "google-beta" {
+  region = var.region
+  zone   = var.zone
+
 }

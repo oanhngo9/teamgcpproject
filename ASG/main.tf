@@ -38,6 +38,7 @@ resource "google_compute_instance_template" "default" {
 
 resource "google_compute_target_pool" "default" {
   provider = google-beta
+  region = var.region
 
   name = var.targetpool_name
 }
