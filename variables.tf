@@ -11,7 +11,7 @@ variable "project_name" {
 }
 
 variable "region" {
-  description = "provide a region for your code"
+  description = "provide a region"
   type        = string
   default     = ""
 }
