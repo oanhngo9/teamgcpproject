@@ -1,4 +1,4 @@
 provider "google" {
-  project = var.dec_vpc_name
+  project = var.project_name
   region  = var.region
 }
