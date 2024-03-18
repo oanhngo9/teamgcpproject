@@ -30,13 +30,13 @@ variable "zone" {
 
 variable "minimum_instances" {
   type        = number
-  default     = "1"
+  default     = 1
   description = "minimum desired instances running"
 }
 
 variable "maximum_instances" {
   type        = number
-  default     = "5"
+  default     = 5
   description = "maximum desired instances"
 }
 
@@ -86,7 +86,6 @@ variable "db_host" {
   type        = string
   default     = "%"
   description = "description"
-
 }
 
 variable "db_password" {
@@ -100,4 +99,3 @@ variable "db_name" {
   default     = "sasha-db"
   description = "description"
 }
-
