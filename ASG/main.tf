@@ -1,7 +1,7 @@
 resource "google_compute_autoscaler" "default" {
   provider = google-beta
 
-  name   = var.dec_asg
+  name   = var.asg_name
   zone   = var.zone
   target = google_compute_instance_group_manager.default.id
 

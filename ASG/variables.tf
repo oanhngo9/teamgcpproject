@@ -16,9 +16,9 @@ variable "region" {
   default     = "us-central1"  # replace with your region
 }
 
-variable "ASG_name" {
+variable "asg_name" {
   type        = string
-  default     = "dec_asg"
+  default     = "decasg"
   description = "desired name for the autoscaling"
 }
 
@@ -69,3 +69,35 @@ variable "data_base_version" {
   default     = "MYSQL_5_7" #MYSQL_5_6, MYSQL_5_7, MYSQL_8_0, POSTGRES_9_6,POSTGRES_10, POSTGRES_11, POSTGRES_12, POSTGRES_13, SQLSERVER_2017_STANDARD, SQLSERVER_2017_ENTERPRISE, SQLSERVER_2017_EXPRESS, SQLSERVER_2017_WEB
   description = "specifies the database version"
 }
+
+variable "dbinstance_name" {
+  type        = string
+  default     = "sasha-instance"
+  description = "name of database instance"
+}
+
+variable "db_username" {
+  type        = string
+  default     = "sasha1"
+  description = "input the database authorized user "
+}
+
+variable "db_host" {
+  type        = string
+  default     = "%"
+  description = "description"
+
+}
+
+variable "db_password" {
+  type        = string
+  default     = "12345678"
+  description = "description"
+}
+
+variable "db_name" {
+  type        = string
+  default     = "sasha-db"
+  description = "description"
+}
+
