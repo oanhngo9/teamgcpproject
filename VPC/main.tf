@@ -6,6 +6,7 @@ resource "google_compute_network" "vpc" {
 
 resource "google_compute_firewall" "firewall" {
   name    = "firewall-rule-name"
+  project = "puofwswvtu"
   network = var.vpc_name  
 
   allow {

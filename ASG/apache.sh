@@ -18,11 +18,4 @@ php --version
 sudo chown -R www-data:www-data /var/www/html
 sudo rm -f /var/www/html/wp-config.php
 cat <<EOF | sudo tee /var/www/html/wp-config.php
-<?php
-define('DB_NAME', '${var.db_name}');
-define('DB_USER', '${var.db_username}');
-define('DB_PASSWORD', '${var.db_password}');
-define('DB_HOST', '${google_sql_database_instance.main.ip_address}');
-define('DB_CHARSET', 'utf8');
-define('DB_COLLATE', '');
 EOF
