@@ -1,5 +1,5 @@
 resource "google_sql_database_instance" "main" {
-  name                = var.dbinstane_name
+  name                = var.dbinstance_name
   database_version    = var.data_base_version
   deletion_protection = "false"
   region              = var.region
