@@ -13,8 +13,6 @@ resource "google_compute_autoscaler" "default" {
 }
 
 resource "google_compute_instance_template" "default" {
-  provider = google-beta
-
   name           = var.template_name
   machine_type   = var.machine_type
   can_ip_forward = false
@@ -58,10 +56,10 @@ resource "google_compute_instance_group_manager" "default" {
   base_instance_name = "autoscaler-sample"
 }
 
+# Create Firewall
 resource "google_compute_firewall" "firewall" {
   name    = "firewall-rule-name"
-  project = "vsffqlygpp"
-  network = var.vpc_name  
+  network = var.vpc_name 
 
   allow {
     protocol = "tcp"
