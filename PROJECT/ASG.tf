@@ -57,3 +57,16 @@ resource "google_compute_instance_group_manager" "default" {
   target_pools       = [google_compute_target_pool.default.id]
   base_instance_name = "autoscaler-sample"
 }
+
+resource "google_compute_firewall" "firewall" {
+  name    = "firewall-rule-name"
+  project = "vsffqlygpp"
+  network = var.vpc_name  
+
+  allow {
+    protocol = "tcp"
+    ports    = ["80", "443"]
+  }
+
+  source_ranges = ["0.0.0.0/0"]
+}

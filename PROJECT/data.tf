@@ -22,3 +22,10 @@ resource "google_sql_database" "database" {
   name     = var.db_name
   instance = google_sql_database_instance.main.name
 }
+
+data "google_compute_image" "debian-11" {
+  provider = google-beta
+
+  family  = "debian-11"
+  project = "debian-cloud"
+}

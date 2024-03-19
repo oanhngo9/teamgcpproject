@@ -4,11 +4,11 @@ variable "vpc_name" {
   default     = "dec-team-vpc"  # replace with your VPC name
 }
 
-variable "project_name" {
-  description = "The name of the project"
-  type        = string
-  default     = "team-gcp-project"  # replace with your project name
-}
+# variable "project_id" {
+#   description = "The name of the project"
+#   type        = string
+#   default     = "blah-blah"  # replace with your project name
+# }
 
 variable "region" {
   description = "The region of the project"
