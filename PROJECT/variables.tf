@@ -54,13 +54,13 @@ variable "machine_type" {
 
 variable "targetpool_name" {
   type        = string
-  default     = "team-gcp-project"
+  default     = "decproject"
   description = "description"
 }
 
 variable "igm_name" {
   type        = string
-  default     = "team-gcp-project"
+  default     = "decproject"
   description = "description"
 }
 

@@ -30,7 +30,7 @@ resource "google_compute_instance_template" "asg" {
   metadata = {
     foo = "bar"
   }
-   metadata_startup_script =  ("/Users/testuser/Desktop/apache2.sh")
+   metadata_startup_script =  ("/Users/testuser/Desktop/apache.sh")
     # Your startup script
   
   service_account {
