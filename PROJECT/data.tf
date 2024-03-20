@@ -3,7 +3,7 @@ resource "google_sql_database_instance" "main" {
   database_version    = var.db_version
   deletion_protection = false
   region              = var.db_region
-  
+
   settings {
     # Second-generation instance tiers are based on the machine
     # type. See argument reference below.
@@ -24,7 +24,7 @@ resource "google_sql_database" "database" {
 }
 
 data "google_compute_image" "debian-11" {
-  provider = google-beta
+  provider = google
 
   family  = "debian-11"
   project = "debian-cloud"

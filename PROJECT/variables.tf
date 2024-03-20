@@ -1,7 +1,7 @@
 variable "vpc_name" {
   description = "The name of the VPC network"
   type        = string
-  default     = "dec-team-vpc"  # replace with your VPC name
+  default     = "dec-team-vpc" # replace with your VPC name
 }
 
 # variable "project_id" {
@@ -13,7 +13,7 @@ variable "vpc_name" {
 variable "region" {
   description = "The region of the project"
   type        = string
-  default     = "us-central1"  # replace with your region
+  default     = "us-central1" # replace with your region
 }
 
 variable "asg_name" {
@@ -111,3 +111,5 @@ variable "db_name" {
   default     = "sasha-db"
   description = "Name of the database"
 }
+
+

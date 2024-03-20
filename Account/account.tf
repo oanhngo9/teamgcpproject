@@ -14,8 +14,8 @@ resource "random_string" "random" {
 }
 
 
-resource "google_project" "newgcpproject" {
-  name            = "Dec-Team-GCP"
+resource "google_project" "decproject" {
+  name            = "decproject"
   project_id      = random_string.random.result
   billing_account = data.google_billing_account.acct.id
 }
@@ -27,7 +27,7 @@ resource "null_resource" "set-project" {
   }
 
   provisioner "local-exec" {
-    command = "gcloud config set project ${google_project.newgcpproject.project_id}"
+    command = "gcloud config set project ${google_project.decproject.project_id}"
   }
 }
 
@@ -35,7 +35,7 @@ resource "null_resource" "set-project" {
 
 resource "null_resource" "enable-apis" {
   depends_on = [
-    google_project.newgcpproject,
+    google_project.decproject,
     null_resource.set-project
   ]
   triggers = {
